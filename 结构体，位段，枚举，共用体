@@ -145,3 +145,83 @@
 //	return 0;
 //}
 //
+
+//联合体（共用体）
+//特征------一系列成员共用同一块空间
+//联合变量的大小，至少是最大成员的大小
+//union U
+//{
+//	char i;
+//	int j;
+//};
+//int main()
+//{
+//	union U u={0};
+//	printf("%d\n",sizeof(u));
+//	printf("%p\n",&u);
+//	printf("%p\n",&u.j);
+//	printf("%p\n",&u.i);
+//	return 0;
+//}
+//当最大成员大小不是最大对齐的整数倍的时候，就要对齐到最大对齐数的整数倍
+//#include<stdio.h>
+//union U
+//{
+//	char arr[6];
+//	int a;
+//};
+//int main()
+//{
+//	union U uu;
+//  printf("%d\n",sizeof(uu));
+	//首先uu的大小至少是等于6的，加上由于char arr[6]不是最大对齐数，
+	//最大对齐数是4,6不是其的整数倍，因此要浪费两个字节，来达到联合的大小是最大对齐数的整数倍
+//	return 0;
+//}
+
+
+//枚举类型
+//enum Weather
+//{
+//	sunny=2,
+//	此处可以对于枚举变量进行赋值，此处赋值属于是初始化
+//	windy,
+//	rainy=7,
+//	snowy
+//};
+//枚举类型中枚举变量所打印出来的整型数值是自动按照从0开始的数值
+//int main()
+//{
+//	enum Weather c=windy;
+//	printf("%d\n",c);
+//	printf("%d %d %d %d\n",sunny,windy,rainy,snowy);
+//	return 0;
+//}
+//
+//位段
+//位段中，冒号后的数字，表示最多可以使用的比特位数
+//#include <stdio.h>
+//struct S
+//{
+//	int a : 2;
+//	int b : 5;
+//	int c : 10;
+//	int d : 30;
+//};
+//位段开辟空间是按照一个字节或者四个字节来开辟的
+//struct S中首开辟四个字节的空间，即32个比特位，将a,b,c分别存放进去之后，剩下的空间不足以存放d，因此还需在开辟四个字节
+//struct S1
+//{
+//	char a : 2;
+//	char d : 4;
+//	char c : 6;
+//	char e : 3;
+//};
+//int main()
+//{
+//	struct S s1={0};
+//	struct S1 s2={0};
+//	printf("%d\n",sizeof(s1));
+//	printf("%d\n",sizeof(s2));
+//	return 0;
+//}
