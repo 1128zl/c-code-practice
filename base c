@@ -1,0 +1,128 @@
+//#include<stdio.h>
+//int main()
+//{
+//	printf("hello! this is a C program\n");
+//	printf("\n");
+//	printf("\n");
+//	printf("我是2021级计科四班的某某\n");
+//	printf("学号是B20120202307\n");
+//	return 0;
+//}
+
+//int main()
+//{
+//	//float a=38.4;
+//	//double b=77.2;
+//	//printf("%f\n",a);
+//	int a=97;int b=98;
+//	printf("%c\t%c\n",a,b);
+//	return 0;
+//}
+
+//int main()
+//{
+//	/*char a,b,c;
+//	a='A';
+//	 b=98;
+//	 c='6';
+//	printf("%d%d%d\n",a,b,c
+//	printf("%c%c%c\n",a,b,c);*/
+//	/*int a=25;int b=025;int c=0x25;
+//	printf("%d %d %d\n",a,b,c);*/
+//	/*int a=168;
+//	int b=25;
+//	printf("%x\n",a);
+//	printf("%o\n",b);*/
+//											//%x——表示打印的数据为十六进制       %o——表示打印出来的数据为八进制
+//
+//	return 0;
+//}
+
+//#include<math.h>
+//int pow(int a, int b)
+//{
+//	int i=0;
+//	int sum=1;
+//	for(i=0;i<b;i++)
+//	{
+//		sum=sum*a;
+//	}
+//	return sum;
+//}
+//int main()
+//{
+//	/*int a=100;int b=200;
++a+5);
+//	
+//	printf("%lf\n",5+b++);*/
+//
+//	int a,b,c;
+//	a=b=8; c=10;
+//	printf("%d^2=%d\n",a,a*b);
+//	printf("%d^2=%d\n",b,a*b);
+//	//printf("%d^2=%d\n",c,c^2);
+//						//C语言中指数不可以用^来表示，需要用专门的函数来表示
+//				//指数函数 pow    使用方法    pow(a,b) 表示求解a 的b次方
+//	printf("%d^2=%d\n",c,c*c);
+//	printf("%d^2=%d\n",c,pow(c,2));
+//	return 0;
+//}
+//int main()
+//{
+//	///*int a=150;
+//	//int b=20;
+//	//int c=45;
+//	//printf("a/b=%d\n",a/b);
+//	//printf("a%b=%d\n",a%b);*/
+
+
+//	//int a=160; int b=46; int c=18; int d=170;
+//	//printf("(a+b)/(b-c)*(c-d)=%d\n",(a+b)/(b-c)*(c-d));
+
+
+//	/*int a=3; int b=4; int c=5;
+//	printf("(1)%d\n",(a=a+3,b+a,b+3));
+//	printf("(2)%d\n",a=a+3,b+a,b+3);*/
+
+//	/*int a=3,c;
+//	double f=34.625;
+//	c= a+(int)f;
+//	printf("%d %f\n",c,f);*/
+
+//	/*int a=15; int b=6;
+//	float a1,a2,a3;
+//	a1=(float)a/b;
+//	a2=1.0*a/b;
+//	a3=a/b;
+//	/*printf("%lf %lf %lf\n",a1,a2,a3);
+//	*/
+
+//	/*int a=3; int b=9; int c=8; int d=10;
+//	a+=b;c*=d+a;d/=a;a%=c;
+//	printf("%d %d %d %d\n",a,b,c,d);*/
+//
+//	return 0;
+//}
+
+//int main()
+//{
+//	/*int a=100;
+//	printf("%d\n",++a);
+//	printf("%d\n",a++);
+//	printf("%d\n",a);*/
+//
+//	/*int a=10;
+//	printf("%d\n",++a+5);
+//	printf("%d\n",7+a++);*/
+//	//虽然前一个打印时，将a进行了加一，但是整体来看，并未改变a的值，
+//	//故第二次打印时 a 的值还是10
+//
+//int main()
+//{
+//	char  a;
+//	a=getchar();
+//	printf("%c %c\n",a,a-32);
+//	return 0; 
+//}
+//大写字母转换为小写字母时 数值加上32
+//小写字母转换为大写字母时 数值减去32
