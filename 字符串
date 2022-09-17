@@ -1,0 +1,74 @@
+//确定文字大小写以及数字的个数
+
+//#include<stdio.h>
+//int main()
+//{
+//	int i=0;
+//	int n=0;
+//	int m=0;
+//	int t=0;
+//	char s[20];
+//	gets(s);
+//	for(i=0;s[i] != 0;i++)
+//	{
+//		if(s[i]>='a' && s[i]<='z')
+//			n++;
+//		if(s[i]>='A' && s[i]<='Z')
+//			m++;
+//		if(s[i]>='0' && s[i]<='9')
+//			t++;
+//	}
+//	printf("大写字母个数为：%d 小写字母个数为：%d 数字个数为：%d\n",m,n,t);
+//	return 0;
+//}
+
+//将字符串1中的一些元素删除后放到原本的字符串2的后面，构成一个新的字符串
+
+//#include<stdio.h>
+//int main()
+//{
+//	char a[81];
+//	char b[81];
+//	int m=0;
+//	int n=0;
+//	int i=0;
+//	int j=0;
+//	scanf("%s",a);
+//	scanf("%s",b);
+//	for(i=j=0;b[i];i++)
+//		if(((b[i]>='a' && b[i]<='z') || (b[i]>='A' && b[i]<='Z')))
+//			b[j++]=b[i];
+//		b[j]='\0';
+//	
+//	while(a[m] !='\0')
+//	{
+//		m++;
+//	}
+//  while(b[n])
+//	{
+//		a[m]=b[n];
+//		m++;
+//		n++;
+//	}
+//	puts(a);
+//	return 0;
+//}
+
+
+
+//#include<stdio.h>
+//int main()
+//{
+//	char a[]="AB@#12Asdf**";
+//	int i,j;
+//	for(i=j=0;a[i];i++)
+//
+//		if((a[i]>='0' && a[i]<='9') || (a[i]>='A' && a[i]<='z'))
+//		
+//			a[j++]=a[i];
+//		
+//			a[j]='\0';
+//	
+//		printf("%s\n",a);
+//		return 0;
+//	}
